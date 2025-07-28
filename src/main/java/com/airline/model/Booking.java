@@ -6,14 +6,14 @@ public class Booking {
     private int bookingId;
     private int flightId;
     private int passengerId;
+    private String seatNumber;
     private Date bookingDate;
 
-    public Booking() {}
-
-    public Booking(int bookingId, int flightId, int passengerId, Date bookingDate) {
+    public Booking(int bookingId, int flightId, int passengerId, String seatNumber, Date bookingDate) {
         this.bookingId = bookingId;
         this.flightId = flightId;
         this.passengerId = passengerId;
+        this.seatNumber = seatNumber;
         this.bookingDate = bookingDate;
     }
 
@@ -21,31 +21,19 @@ public class Booking {
         return bookingId;
     }
 
-    public void setBookingId(int bookingId) {
-        this.bookingId = bookingId;
-    }
-
     public int getFlightId() {
         return flightId;
-    }
-
-    public void setFlightId(int flightId) {
-        this.flightId = flightId;
     }
 
     public int getPassengerId() {
         return passengerId;
     }
 
-    public void setPassengerId(int passengerId) {
-        this.passengerId = passengerId;
+    public String getSeatNumber() {
+        return seatNumber;
     }
 
     public Date getBookingDate() {
         return bookingDate;
-    }
-
-    public void setBookingDate(Date bookingDate) {
-        this.bookingDate = bookingDate;
     }
 }

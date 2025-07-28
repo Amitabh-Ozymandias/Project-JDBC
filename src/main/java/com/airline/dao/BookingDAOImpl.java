@@ -33,7 +33,8 @@ public class BookingDAOImpl implements BookingDAO {
                     rs.getInt("booking_id"),
                     rs.getInt("flight_id"),
                     rs.getInt("passenger_id"),
-                    rs.getString("seat_number")
+                    rs.getString("seat_number"),
+                    rs.getDate("booking_date")
                 );
             }
         } catch (SQLException e) {
@@ -53,7 +54,8 @@ public class BookingDAOImpl implements BookingDAO {
                     rs.getInt("booking_id"),
                     rs.getInt("flight_id"),
                     rs.getInt("passenger_id"),
-                    rs.getString("seat_number")
+                    rs.getString("seat_number"),
+                    rs.getDate("booking_date")
                 ));
             }
         } catch (SQLException e) {
